@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuhao Wang | Personal Profile Page</title>
+
+  <!-- Google Fonts (requirement: use fonts from Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Link stylesheet with a relative path -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ Header: name, photo and navigation links ============ -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">
+        <img src="images/profile.jpg" alt="Yuhao Wang profile photo">
+        <span>
+          Yuhao Wang
+          <span class="brand-sub">王昱皓</span>
+        </span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="about.html">More About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section class="container hero">
+      <div class="hero-text">
+        <h1>Hi, I'm Yuhao Wang</h1>
+        <p class="tagline">Computer Science Student · Web Enthusiast</p>
+        <p>
+          Welcome to my personal page! I am a second-year Computer Science student
+          in the joint programme between Xi'an University of Architecture and
+          Technology and the University of Adelaide. I love learning how the web
+          works and building simple, clean things with HTML, CSS and JavaScript.
+        </p>
+      </div>
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="A photo of Yuhao Wang">
+      </div>
+    </section>
+
+    <!-- ============ About section ============ -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <p class="lead">
+        I am currently studying Computer Science, and this semester I am learning
+        web page development — how to structure a page with HTML, style it with
+        CSS, and make it interactive with JavaScript. I enjoy turning ideas into
+        pages that other people can actually open and use.
+      </p>
+      <p class="lead">
+        In my free time I enjoy playing football and badminton, travelling to new
+        places, and listening to music. I am always curious about technology and
+        how it can make everyday life easier.
+      </p>
+    </section>
+
+    <!-- ============ Skills section (HTML list with CSS styling) ============ -->
+    <section id="skills" class="section container">
+      <h2>My Skills</h2>
+      <p class="lead">Here are some of the skills I have been learning:</p>
+      <ul class="skills-list">
+        <li>HTML — building page structure</li>
+        <li>CSS — styling and layout</li>
+        <li>JavaScript — making pages interactive</li>
+        <li>Python — programming basics</li>
+        <li>Excel — data dashboards and reports</li>
+        <li>Problem solving &amp; teamwork</li>
+      </ul>
+    </section>
+
+    <!-- ============ Contact form ============ -->
+    <section id="contact" class="section container">
+      <h2>Contact Me</h2>
+      <p class="lead">Feel free to send me a message using the form below.</p>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer with links ============ -->
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:2686757902@qq.com">Email</a></li>
+      <li><a href="https://www.adelaide.edu.au/" target="_blank" rel="noopener">University of Adelaide</a></li>
+    </ul>
+    <p>&copy; 2026 Yuhao Wang · Built for the Web Page Development course</p>
+  </footer>
+
+</body>
+</html>
