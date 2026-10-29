@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive Page</title>
+
+  <!-- Simple styling (not required by the steps, just to make the page look tidy) -->
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f6f9;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 48px 56px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+      text-align: center;
+    }
+
+    button {
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-family: inherit;
+      border: none;
+      border-radius: 8px;
+      background-color: #1f3a5f;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    /* The reset button (Step 9 bonus) uses a softer colour */
+    #resetButton {
+      background-color: #8d99ae;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Step 2: Add a heading -->
+    <h1 id="myHeading">Welcome!</h1>
+
+    <!-- Step 3: Add a button -->
+    <button id="myButton">Click Me</button>
+
+    <!-- Step 9 (Bonus): a second button that changes the heading back -->
+    <button id="resetButton">Reset</button>
+  </div>
+
+  <!-- Step 4: Add a <script> section before </body> -->
+  <script>
+    // Step 5: Use document.getElementById to find the button
+    const myButton = document.getElementById('myButton');
+
+    // Step 6: Use addEventListener to listen for 'click' events
+    myButton.addEventListener('click', function () {
+
+      // Step 7: When clicked, change the heading text to something fun
+      document.getElementById('myHeading').textContent = 'You clicked me! Hooray!';
+
+      // Step 8 (Bonus): Change the heading colour too!
+      document.getElementById('myHeading').style.color = '#e76f51';
+    });
+
+    // Step 9 (Bonus): Add a second button that changes it back
+    const resetButton = document.getElementById('resetButton');
+    resetButton.addEventListener('click', function () {
+      document.getElementById('myHeading').textContent = 'Welcome!';
+      document.getElementById('myHeading').style.color = '#000000';
+    });
+  </script>
+
+</body>
+</html>
